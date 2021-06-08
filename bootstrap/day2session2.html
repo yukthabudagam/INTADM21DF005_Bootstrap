@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        button
+        {
+            color: white;
+            background-color: #4CAF50;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        #save
+        {
+            background-color: green;
+            text-align: center;
+            padding: 10px,15px;
+            border-radius: 0%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="col-12 navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand mr-auto" href="#">Payroll</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="material-icons" style="vertical-align: middle;">home</span>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Goals</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">New Employee</h1><br>
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class = "col-sm-4">
+                    <div class="form-group">
+                        <label for="FirstName">First Name</label>
+                        <input type="text" class="form-control" id="fname" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+                <div class = "col-sm-4">
+                    <div class="form-group">
+                        <label for="midname">Middle Name</label>
+                        <input type="text" class="form-control" id="midname" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+                <div class = "col-sm-4">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lname" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col-sm-6">
+                    <div class="form-group">
+                        <label for="address1">Address Line 1</label>
+                        <input type="text" class="form-control" id="add1" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+                <div class = "col-sm-6">
+                    <div class="form-group">
+                        <label for="address2">Address Line 2</label>
+                        <input type="text" class="form-control" id="add2" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col-sm-6">
+                    <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+                <div class = "col-sm-3">
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" id="pwd" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+                <div class = "col-sm-3">
+                    <div class="form-group">
+                        <label for="cnfmpwd">Confirm Password</label>
+                        <input type="Password" class="form-control" id="cpwd" aria-describedby="emailHelp">
+                    </div>                
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col-sm-3">
+                    <label for="dept">Department</label>
+                    <select class="form-control">
+                        <option></option>
+                        <option>IT</option>
+                        <option>HR</option>
+                        <option>Placement</option>
+                        <option>Management</option>
+                    </select>                
+                </div>
+                <div class = "col-sm-3">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="Date" class="form-control" id="pick_date">
+                    </div>                
+                </div>
+                <div class = "col-sm-3">
+                    <div class="form-check">
+                        <label for="CPassword">Gender</label><br>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">Male</label>&emsp;&emsp;
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">Female</label>
+                    </div>               
+                </div>
+                <div class = "col-sm-3">
+                    <div class="ss">
+                        <label for="job">Permanent</label>
+                        <label for="Permanent"></label><br>
+                        <input class="check" type="checkbox">
+                    </div>                   
+                </div>
+            </div>
+            <button id="save" type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+          $(function() {
+            $( "#pick_date" ).datepicker();
+        });
+    })
+    </script>
+</body>
+</html>
